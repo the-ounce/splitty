@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TipSplitty
+//  Splitty
 //
 //  Created by Никита Гавриленко on 16.06.2022.
 //

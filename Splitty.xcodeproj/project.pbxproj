@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55BD3F0C285C81F600421F22 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BD3F0B285C81F600421F22 /* ResultViewController.swift */; };
 		55EFFAA7285B80340038E01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFFAA6285B80340038E01E /* AppDelegate.swift */; };
 		55EFFAA9285B80340038E01E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFFAA8285B80340038E01E /* SceneDelegate.swift */; };
 		55EFFAAB285B80340038E01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFFAAA285B80340038E01E /* MainViewController.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55EFFAA3285B80340038E01E /* TipSplitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipSplitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BD3F0B285C81F600421F22 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		55EFFAA3285B80340038E01E /* Splitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EFFAA6285B80340038E01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EFFAA8285B80340038E01E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55EFFAAA285B80340038E01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		55EFFA9A285B80340038E01E = {
 			isa = PBXGroup;
 			children = (
-				55EFFAA5285B80340038E01E /* TipSplitty */,
+				55EFFAA5285B80340038E01E /* Splitty */,
 				55EFFAA4285B80340038E01E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +52,12 @@
 		55EFFAA4285B80340038E01E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55EFFAA3285B80340038E01E /* TipSplitty.app */,
+				55EFFAA3285B80340038E01E /* Splitty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55EFFAA5285B80340038E01E /* TipSplitty */ = {
+		55EFFAA5285B80340038E01E /* Splitty */ = {
 			isa = PBXGroup;
 			children = (
 				55EFFAA6285B80340038E01E /* AppDelegate.swift */,
@@ -67,7 +69,7 @@
 				55EFFAB1285B80340038E01E /* LaunchScreen.storyboard */,
 				55EFFAB4285B80340038E01E /* Info.plist */,
 			);
-			path = TipSplitty;
+			path = Splitty;
 			sourceTree = "<group>";
 		};
 		55EFFABA285B80AD0038E01E /* View */ = {
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				55EFFAAA285B80340038E01E /* MainViewController.swift */,
+				55BD3F0B285C81F600421F22 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55EFFAA2285B80340038E01E /* TipSplitty */ = {
+		55EFFAA2285B80340038E01E /* Splitty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55EFFAB7285B80340038E01E /* Build configuration list for PBXNativeTarget "TipSplitty" */;
+			buildConfigurationList = 55EFFAB7285B80340038E01E /* Build configuration list for PBXNativeTarget "Splitty" */;
 			buildPhases = (
 				55EFFA9F285B80340038E01E /* Sources */,
 				55EFFAA0285B80340038E01E /* Frameworks */,
@@ -109,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = TipSplitty;
+			name = Splitty;
 			productName = TipSplitty;
-			productReference = 55EFFAA3285B80340038E01E /* TipSplitty.app */;
+			productReference = 55EFFAA3285B80340038E01E /* Splitty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 55EFFA9E285B80340038E01E /* Build configuration list for PBXProject "TipSplitty" */;
+			buildConfigurationList = 55EFFA9E285B80340038E01E /* Build configuration list for PBXProject "Splitty" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55EFFAA2285B80340038E01E /* TipSplitty */,
+				55EFFAA2285B80340038E01E /* Splitty */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BD3F0C285C81F600421F22 /* ResultViewController.swift in Sources */,
 				55EFFAAB285B80340038E01E /* MainViewController.swift in Sources */,
 				55EFFAA7285B80340038E01E /* AppDelegate.swift in Sources */,
 				55EFFABD285B80F20038E01E /* TipBrain.swift in Sources */,
@@ -316,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TipSplitty/Info.plist;
+				INFOPLIST_FILE = Splitty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.the-ounce.TipSplitty";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-ounce.Splitty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TipSplitty/Info.plist;
+				INFOPLIST_FILE = Splitty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.the-ounce.TipSplitty";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.the-ounce.Splitty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55EFFA9E285B80340038E01E /* Build configuration list for PBXProject "TipSplitty" */ = {
+		55EFFA9E285B80340038E01E /* Build configuration list for PBXProject "Splitty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55EFFAB5285B80340038E01E /* Debug */,
@@ -376,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55EFFAB7285B80340038E01E /* Build configuration list for PBXNativeTarget "TipSplitty" */ = {
+		55EFFAB7285B80340038E01E /* Build configuration list for PBXNativeTarget "Splitty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55EFFAB8285B80340038E01E /* Debug */,
