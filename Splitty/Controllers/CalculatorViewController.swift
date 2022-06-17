@@ -19,9 +19,10 @@ class CalculatorViewController: UIViewController {
 
 
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        billTextField.endEditing(true)
+        
         splitBrain.splitNumber = Int(sender.value)
         splitNumberField.text = String(splitBrain.splitNumber)
-        
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
