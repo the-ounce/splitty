@@ -17,7 +17,7 @@ class CalculatorViewController: UIViewController {
     
     var splitBrain = SplitBrain()
 
-    
+
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         splitBrain.splitNumber = Int(sender.value)
         splitNumberField.text = String(splitBrain.splitNumber)
@@ -33,8 +33,24 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
+        let billText = billTextField.text ?? "0"
+        let splitText = splitNumberField.text ?? "0"
         
+        splitBrain.calculateSplit(billAmount: billText, splitNumber: splitText)
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultViewController
+            let peopleNum = splitBrain.getSplitNumber()
+            let tip = Int(splitBrain.getPercentageTip() * 100.0)
+            
+            destinationVC.billText = splitBrain.getFinalAmount()
+            destinationVC.settingsText = "Split between \(peopleNum) people, with \(tip)% tip"
+        }
+    }
+    
     
     func deselectButtons() {
         zeroPercentButton.isSelected = false

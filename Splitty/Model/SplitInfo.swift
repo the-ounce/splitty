@@ -6,7 +6,7 @@
 //
 
 struct SplitInfo {
-    var billAmount: Float?
+    var splitBillAmount: Float?
     var splitNumber: Int?
     var tipPercentage: Float?
 }
