@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var splitNumberField: UITextField!
@@ -20,6 +20,7 @@ class CalculatorViewController: UIViewController {
 
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         billTextField.endEditing(true)
+        billTextField.delegate = self
         
         splitBrain.splitNumber = Int(sender.value)
         splitNumberField.text = String(splitBrain.splitNumber)
@@ -52,12 +53,23 @@ class CalculatorViewController: UIViewController {
         }
     }
     
-    
     func deselectButtons() {
         zeroPercentButton.isSelected = false
         tenPercentButton.isSelected = false
         twentyPercentButton.isSelected = false
     }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        let charNumber = billTextField.text?.count ?? 0
+        if charNumber > 6 {
+            billTextField.endEditing(true)
+            print("fadsf")
+            return true
+        } else {
+            return false
+        }
+    }
+    
     
     
 }
